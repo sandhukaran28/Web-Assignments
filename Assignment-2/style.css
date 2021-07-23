@@ -1,0 +1,79 @@
+nav h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    color: white;
+    margin-left: 20px;
+}
+nav{
+    background-color: #5468E8;
+    padding: 10px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: #8e9eab;
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    
+}
+main{
+    margin-top: 30px;
+    margin-left: 55%;
+    margin-right: 5%;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px #ccc;
+    background-color: #FCE4D1;
+    border-radius: 20px;
+    width: 40%;
+
+}
+main ul{
+    list-style-type: none;
+
+}
+main h1{
+    background-color: #fac59a;
+    padding: 5px;
+    position: sticky;
+    top: 0px;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+}
+main ul li{
+    border-bottom: 2px solid #dd8a42;
+    font-size: larger;
+    padding-left: 30px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+li::before{
+    content: "\260E ";
+    margin-right: 10px;
+}
+li:hover{
+    background-color: #FFFCF7;
+    font-size: x-large;
+}
+
+main div{
+    padding: 30px;
+}
+img{
+}
+section{
+    float: left;
+    position: sticky;
+    top: 70px;
+    margin-left: 50px;
+    width: 40%;
+}
+section h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    text-align: center;
+}
