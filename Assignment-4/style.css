@@ -1,0 +1,342 @@
+/* Navbar */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #ccc;
+}
+nav{
+    display: flex;
+    background-color: #222222;
+    padding: 20px 50px;
+    justify-content: space-between ;
+    align-items: center;
+}
+a[id="name"]{
+    font-size: 2rem;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-between;
+}
+nav a{
+    color: white;
+    font-size: 1.75rem;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    transition:color 1s;
+    transition: transform 1s;
+}
+a[active]{
+    background-color:#333333;
+    border-radius: 6px;
+    color: yellow;
+}
+nav ul li{
+    border-radius:6px;
+}
+nav a:hover{
+    background-color:#333333;
+    border-radius: 6px;
+    color: yellow;
+}
+@media screen and (max-width:740px) {
+ nav,ul{
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ } 
+ nav ul{
+     margin-top: 10px;
+
+ }
+
+ nav ul li{
+     width: 100%;
+     padding: 10px 0px;
+     text-align: center;
+
+ }  
+ nav ul li:hover{
+   background-color: #333333;
+    
+} 
+ 
+}
+
+/* Carousel */
+#slide{
+    max-width: 100%;
+}
+div[id="slide"] img{
+    max-width: 100%;
+    animation: carousel 15s ease  infinite;
+    transition: 10s ease-in;
+}
+
+@keyframes carousel {
+
+0%{
+        content:url("https://demo.codezeel.com/prestashop/PRS16/PRS160380/PRS01/modules/cz_imageslider/views/img/sample-2.jpg");
+    
+}
+50%{
+    content: url("https://demo.codezeel.com/prestashop/PRS16/PRS160380/PRS01/modules/cz_imageslider/views/img/sample-3.jpg");
+}
+100%{
+
+content: url("https://demo.codezeel.com/prestashop/PRS16/PRS160380/PRS01/modules/cz_imageslider/views/img/sample-1.jpg");
+}
+}
+/* Main */
+ main section{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin: 50px 60px;
+    padding: 20px;
+}
+main section div{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+main section div figure{
+    width: 250px;
+    transition: 200ms;
+    margin: 10px 5px;
+    /* background-color: #F2F2F2; */
+}
+main section div figure img{
+    width: 100%;
+}
+main section div figure figcaption{
+    padding: 10px;
+}
+.pName{
+    font-size: 24px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: color 200ms;
+}
+.pRate{
+    color: rgb(241, 241, 50);
+    font-size: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.pPriceOld{
+    text-decoration: line-through;
+    color: rgb(105, 105, 105);
+    font-size: 14px;
+
+}
+.pPrice{
+    font-size: 21px;
+    margin-right: 5px;
+}
+main section div figure figcaption button{
+padding: 5px;
+margin: 5px;
+font-size: large;
+background-color:rgb(105, 105, 105); 
+color: white;
+border:0px;
+width: 100px;
+border-radius: 7px;
+height: 40px;
+transition: 400ms;
+}
+.product:hover{
+    transform: scale(1.05);
+    box-shadow: -2px 2px 4px #333333,  2px -2px 4px #333333;
+}
+.pName:hover{
+    color: rgb(224, 224, 11);
+
+}
+main section div figure figcaption button:hover{
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+}
+main section[id="connect"] h3{
+    font-size: 2rem;
+}
+
+/* Contact */
+section[id="connect"]{
+    background-color: white;
+    margin: 50px 60px;
+    padding: 20px;
+}
+section[id="connect"] h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    transition: 200ms;
+}
+section[id="connect"] h2:hover{
+    color: rgb(241, 241, 50);;
+}
+.contact img{
+    width: 100%;
+}
+.contact{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.contactLeft{
+    padding: 10px;
+    width: 35%;
+    height: 400px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactLeft h1{
+    margin-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+.contactLeft h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.contactLeft h1[id="mail"]{
+    font-size: 3rem;
+}
+.contactRight{
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.contactRight input{
+    width: 45%;
+    height: 30px;
+    border: 3px solid  rgb(241, 241, 50);
+    margin: 10px 5px;
+    padding: 5px;
+    font-size: 1.10rem;
+}
+.contactRight textarea{
+    width: 95%;
+    border: 3px solid  rgb(241, 241, 50);
+    padding: 10px;
+}
+.contactRight form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contactRight input:focus{
+    border: 0px;
+    border:4px solid  rgb(241, 241, 50);
+    outline: none;
+}
+.contactRight textarea:focus{
+    border: 0px;
+    border:4px solid  rgb(241, 241, 50);
+    outline: none;
+}
+.contactRight button{
+    width: 95%;
+    height: 45px;
+    padding: 5px;
+    margin: 5px;
+    font-size: large;
+    background-color:rgb(105, 105, 105); 
+    color: white;
+    border:0px;
+    border-radius: 7px;
+    transition: 200ms;
+}
+.contactRight button:hover{
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width:860px) {
+    .contact{
+        flex-direction: column;
+        margin: 0px;
+        align-items: center;
+    }
+    .contactLeft{
+        width: 100%;
+        height: 200px;
+        margin-right:0px;   
+    }
+    .contactLeft h1{
+        font-size: 1rem;
+    }
+    .contactLeft h3{
+        font-size: 0.8rem;
+    }
+    .contactRight input{
+        width: 100%;
+    }
+}
+/* Footer */
+footer{
+    margin-top: 50px;
+    background-color: #222222;
+}
+footer section{
+    background-color: #222222;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px; 
+    flex-wrap: wrap;
+}
+
+footer li{
+    color: white;
+}
+#foot1 ul{
+    display: flex;
+    flex-direction: column;
+}
+.foot{
+    list-style-type: none;
+}
+.foot li{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    transition: 200ms;
+}
+.foot li:nth-of-type(1){
+    margin-bottom: 10px;
+}
+footer h2{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.foot li:hover{
+    color: yellow;
+    cursor: pointer;
+}
+@media screen and (max-width:711px) {
+    footer section{
+        justify-content: flex-start;
+    }
+    .foot{
+        align-self: start;
+    }
+}
