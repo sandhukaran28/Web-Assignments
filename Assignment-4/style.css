@@ -28,8 +28,7 @@ nav a{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
-    transition:color 1s;
-    transition: transform 1s;
+    transition: 200ms;
 }
 a[active]{
     background-color:#333333;
