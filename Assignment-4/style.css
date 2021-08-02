@@ -339,4 +339,12 @@ footer h2{
     .foot{
         align-self: start;
     }
+    .foot div{
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width:500px) {
+nav ul,nav li{
+    width:100%;
+} 
 }
