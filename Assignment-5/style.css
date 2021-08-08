@@ -150,7 +150,7 @@ nav{
     background-color: var(--green-color)
 }
 .projects{
-    grid-template-columns: repeat(auto-fill,minmax(280px,1fr)) !important;
+    grid-template-columns: repeat(auto-fill,minmax(320px,1fr)) !important;
     display:grid !important;
 
 }
