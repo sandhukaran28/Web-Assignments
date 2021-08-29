@@ -145,6 +145,22 @@ nav{
 }
 #project_div{
     margin-top: 250px !important;
+    padding: 0px 10%;
+}
+@media screen and (max-width:400px) {
+
+    #project_div{
+    padding: 0px 1%;
+}
+#project_div h1{
+    padding-left: 10%;
+}
+.navbar-nav, .nav-item{
+   padding-left: 0px !important; 
+}
+.row{
+    margin-top: 10vh !important;
+}
 }
 .button-icon{
     background-color: var(--green-color)

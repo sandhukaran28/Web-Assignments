@@ -1,0 +1,196 @@
+body{
+    background-color: #caf0f8;
+    
+}
+nav{
+    background-color: #90e0ef;
+    box-shadow: -1rem 0 3rem #000;
+}
+nav h1{
+padding: 15px 100px;
+font-size: 2.75rem;
+ font-family: 'Dancing Script', cursive;    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    width: 500px;
+    min-height: 70vh;
+    background-color:#22223b;
+    margin: 50px auto;
+    border-radius: 30px;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1rem 1rem 1rem #000;
+ 
+}
+@media screen and (max-width:500px) {
+  section{
+    width: 88%;
+  }
+  .todoActions{
+    padding: 0px !important;
+  }
+  .todoInput{
+    width: 50%;
+  }
+}
+section h1{
+    text-align: center;
+    color: white;
+    margin: 10px 10px 30px 10px;
+
+}
+#todo{
+    list-style-type: none;
+    width: 85%;
+    position: relative;
+}
+.disabledInput{
+    pointer-events: none;
+}
+
+#todoInput{
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 70%;
+  background: transparent;
+  color: #fff;
+  font-size: 18px;
+}
+#add{
+  padding: 16px;
+  height: 100%;
+  border: none;
+  font-size: 16px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+  transition: 600ms;
+}
+
+#add:hover i{
+transform: scale(1.3);
+}
+#inputDiv{
+    padding: 10px;
+    height:52px ;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.todoLi{
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%
+  );
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  transition: 1s;
+}
+
+.todoLi:nth-child(4n+1){
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+}
+
+.todoLi:nth-child(4n+1) button:hover{
+ background: white;
+ color: rgba(155, 0, 250, 1);
+ border-radius: 5px;
+}
+
+.todoLi:nth-child(4n+2){
+  background: linear-gradient(
+    90deg,
+    rgba(255, 12, 241, 1) 0%,
+    rgba(250, 0, 135, 1) 100%
+  );
+}
+.todoLi:nth-child(4n+2) button:hover{
+  background: white;
+  color: rgba(250, 0, 135, 1);
+  border-radius: 5px;
+ }
+
+.todoLi:nth-child(4n+3){
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+}
+
+.todoLi:nth-child(4n+3) button:hover{
+  background: white;
+  color:  rgba(17, 122, 255, 1);
+  border-radius: 5px;
+ }
+
+ .todoLi:nth-child(4n) button:hover{
+  background: white;
+  color:  rgba(255, 84, 17, 1);
+  border-radius: 5px;
+ }
+
+.todoInput{
+  font-size: 18px;
+  color: #fff;
+  background:none;
+  outline: none;
+  border: none;
+  font-weight: bold;
+}
+
+.todoActions{
+  background: none;
+  border: none;
+  padding: 5px;
+  color: white;
+  font-size: 20px;
+}
+
+.checkBox{  
+ height: 30px; 
+  cursor: pointer;
+  transform: scale(1.75);
+  margin-right: 10px;
+}
+.checkBox:after{
+  background-color: red;
+}
+
+.completed{
+  text-decoration: line-through;
+}
+
+.todoOverflow{
+  text-overflow: ellipsis;
+}
