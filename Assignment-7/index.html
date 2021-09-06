@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4878e8f3db.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <title>Weather Lens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h1>Weather Lens <i class="fas fa-cloud-sun"></i></h1>
+        <div id="search">
+            <input type="text" id="location" placeholder="Enter City..."  autocomplete="off">
+            <button id="searchButton" class="btn"><i class="fas fa-search" ></i></button>
+        </div>
+    </nav>
+    
+    <div id="main">
+        <div id="left">
+            <section id="leftSection">
+                    <ul id="info">
+                        <li id="temp"><span id="currentTemp">08&deg;</span></li>
+                        <li><section>
+                            <ul id="innerList">
+                                <li id="name">London</li>
+                                <li id="timeDetails">06:09 - Sunday, 3 Sept 21</li>
+                            </ul>
+                        </section></li>
+                        <li>
+                            <section>
+                                <ul id="innerList2">
+                                    <li id="icon"><img id="weatherIcon" src="https://openweathermap.org/img/wn/01d@2x.png" alt=""></li>
+                                    <li><span id="weatherBig" class="weatherMain">Rainy</span></li>
+                                </ul>
+                            </section>
+                        </li>
+                </ul>
+            </section>
+        </div>
+        <div id="right">
+            <section>
+                <h3 class="whiteText">Weather Details</h3>
+                <ul id="details">
+                    <li>
+                        <span class="greyText">Feels like</span>
+                        <span class="whiteText" id="feels">32&deg;</span>
+                    </li>
+                    <hr>
+                    <li>
+                        <span class="greyText">Cloudy</span>
+                        <span class="whiteText" id="cloudy">88%</span>
+                    </li>
+                    <hr>
+                    <li>
+                        <span class="greyText">Humidity</span>
+                        <span class="whiteText" id="humidity">62%</span>
+                    </li>
+                    <hr>
+                    <li>
+                        <span class="greyText">Wind</span>
+                        <span class="whiteText" id="wind">8km/h</span>
+                    </li>
+                    <hr>
+                    <li>
+                        <span class="greyText">Pressure</span>
+                        <span class="whiteText" id="pressure">1005</span>
+                    </li>
+                    <hr>
+                    <li>
+                        <span class="greyText">Visibility</span>
+                        <span class="whiteText" id="visibility">1000</span>
+                    </li>
+                    <hr>
+                    <li>
+                        <span class="greyText">Min. Temperature</span>
+                        <span class="whiteText" id="minTemp">32&deg;</span>
+                    </li>
+                    <hr>
+                    <li>
+                        <span class="greyText">Max. Temperature</span>
+                        <span class="whiteText" id="maxTemp">40&deg;</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>    
+    <script src="app.js"></script>
+    
+</body>
+</html>
