@@ -1,0 +1,173 @@
+:root {
+  --primary-color: #7209b7;
+
+  /* cdb4db */
+}
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+* {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #bde0fe;
+}
+.head {
+  width: 100%;
+  height: 20px;
+}
+
+.card {
+  width: 450px;
+  min-height: 75vh;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #000;
+  margin: 0px auto;
+  margin-top: 100px;
+  padding-bottom: 10px;
+}
+.card-heading {
+  text-align: center;
+  margin-top: 30px;
+  background-color: var(--primary-color);
+  padding: 10px;
+  color: white;
+}
+.input-div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+#todo-input {
+  outline: none;
+  border: none;
+  border-bottom: 3px solid var(--primary-color);
+  width: 60%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--primary-color) b;
+}
+
+.btn {
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: 200ms;
+}
+.btn:hover {
+  font-size: 2rem;
+  opacity: 0.7;
+}
+
+.submit_button {
+  background: none;
+}
+.update_button {
+  background: var(--primary-color);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.edit {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+  border: 3px solid var(--primary-color);
+  height: 200px;
+  padding: 20px 0px;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit h3 {
+  color: var(--primary-color);
+}
+/* Todo Card */
+
+.todoCard {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 15px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: white;
+  transition: 600ms;
+}
+.isDoneTrue {
+  text-decoration: line-through;
+  text-decoration-color: var(--primary-color);
+}
+.isDoneFalse {
+  text-decoration: none;
+}
+.todoCard:hover {
+  transform: scale(1.03);
+}
+.todoButton {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  transition: 600ms;
+  padding: 5px;
+  border-radius: 5px;
+}
+.todoButton:hover {
+  color: var(--primary-color);
+  background-color: white;
+}
+#isDone {
+  transform: scale(1.5);
+}
+#todos {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+#todos:focus {
+  outline: none;
+}
+
+#todo-completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+#todo-uncompleted {
+  text-decoration: none;
+  opacity: 1;
+}
+#todoText {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-left: 5px;
+  max-width: 250px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
